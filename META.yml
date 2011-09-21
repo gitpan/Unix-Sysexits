@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Unix-Sysexits
-version:            0.01
+version:            0.02
 abstract:           Perl extension for sysexits.h
 author:
     - Jeremy Mates <jmates@cpan.org>

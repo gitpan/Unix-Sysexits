@@ -31,7 +31,7 @@ our @EXPORT = qw(
 	EX__MAX
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -73,15 +73,16 @@ Unix::Sysexits - Perl extension for sysexits.h
 
 =head1 SYNOPSIS
 
-See sysexits(3) for details on the constants.
+Consult L<sysexits(3)> for details on the constants.
 
   use Unix::Sysexits;
   exit EX_USAGE;
 
 =head1 DESCRIPTION
 
-No really, just a thin wrapper around sysexits(3) for those constants,
-presumably for exit codes.
+No really, just a thin wrapper around L<sysexits(3)> for those
+constants. See L<POSIX> for the EXIT_FAILURE and EXIT_SUCCESS stdlib
+constants.
 
 =head2 EXPORT
 
@@ -106,15 +107,15 @@ presumably for exit codes.
 
 =head1 SEE ALSO
 
-sysexits(3)
+L<sysexits(3)>, L<POSIX>
 
 =head1 AUTHOR
 
-jmates, E<lt>jmates@cpan.orgE<gt>
+Jeremy Mates, E<lt>jmates@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2011 by jmates
+Copyright (C) 2011 by Jeremy Mates
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.14.1 or,
